@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Teste formulario/formulario.css" media=""
+    </title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo"> Complete suas informações</p>
+        
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required> 
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+   
+    <fieldset>
+        <div class="campo">
+            <label for="email">email</label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+    
+        <div class="campo">
+            <label><strong></label>Qual seu gênero?</strong></label>
+            <input type="radio" name="genero" value="Masculino">Masculino
+            <input type="radio" name="genero" value="Feminino">Feminino
+            <input type="radio" name="genero" value="Não responder">Não responder
+        </div>
+
+        <div class="grupo">
+
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Sem experiência</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+
+        </div>
+
+    <div class="campo">
+            <label><strong>Escolaridade</strong></label>
+            <select id="Escolaridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Ensino Fundamental Incompleto</option>
+                <option>Ensino Fundamental Cursando</option>
+                <option>Ensino fundamental Completo</option>
+                <option>Ensino Medio Incompleto</option>
+                <option>Ensino Medio Cursando</option>
+                <option>Ensino Medio Completo</option>
+                <option>Ensino Superior Incompleto</option>
+                <option>Ensino Superior Cursando</option>
+                <option>Ensino Superior Completo</option>
+        </div>
+    </fieldset>
+        <div class="campo">
+            <label>CPF</label>
+            <input type="text" pattern="^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$" placeholder="CPF" minlength="14" maxlength="14">
+        </div>
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="HTML">
+            <label for="tecnologias">HTML</label>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="CSS">
+            <label for="tecnologias">CSS</label>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="JavaScript">
+            <label for="tecnologias">JavaScript</label>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="PHP">
+            <label for="tecnologias">PHP</label>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="Python">
+            <label for="tecnologias">Python</label>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="Java">
+            <label for="tecnologias"Java></label>
+            <input type="checkbox" id="tecnologias" name="tecnologias" value="C#">
+            <label for="tecnologias">C#</label>
+        </div>
+    </fieldset>
+
+    <div class="campo">
+        <br>
+        <label><strong>Conte suas experiências:</strong></label>
+        <textarea row="6" style="width: 26em" id="experiências" name="experiências"></textarea>
+    </div>
+
+    <button type="submit">
+enviar
+    </button>
+    </form>
+
+</body>
+</html>
